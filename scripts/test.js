@@ -12,7 +12,7 @@ socket.on('trades', function (tradeMsg) {
     var BTC = tradeMsg["message"]["msg"]["long"]
     var value = tradeMsg["message"]["msg"]["price"]
     var i = 0
-    if (BTC = "Bitcoin"){
+    if (BTC === "Bitcoin"){
         console.log(tradeMsg)
         $('[data-BTC="target"]')[0].textContent = BTC + " " + value
     }
